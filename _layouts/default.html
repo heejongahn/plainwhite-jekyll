@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	{%- include head.html -%}
+	{%- include mathjax_support.html -%}
 </head>
 <body>
 	<main class="container">
@@ -30,6 +31,5 @@
 		gtag('config', '{{ site.plainwhite.analytics_id }}');
 	</script>
 	{%- endif -%}
-	{% include mathjax_support.html %}
 </body>
 </html>
