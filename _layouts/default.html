@@ -16,6 +16,15 @@
 				<a href="https://twitter.com/{{ site.plainwhite.social_links.twitter }}"><li><i class="icon-twitter-squared"></i></li></a>
 			</ul>
 			<p>&copy; 2019</p>
+            
+            <!-- nav bar -->
+            <h2>{{ site.data.navlist.docs_list_title }}</h2>
+            <ul>
+               {% for item in site.data.navlist.docs %}
+                  <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+               {% endfor %}
+            </ul>
+
 		</section>
 		<section class="content">
 			{{ content }}
