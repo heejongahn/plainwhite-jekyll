@@ -3,17 +3,16 @@
 <head>
 	{%- include head.html -%}
 	{%- include mathjax_support.html -%}
-    <base href="{{ site.baseurl }}">
-
     {%- if site.plainwhite.analytics_id -%}
-	<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.plainwhite.analytics_id }}"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.plainwhite.analytics_id }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-		gtag('config', '{{ site.plainwhite.analytics_id }}');
-	</script>
+      gtag('config', '{{ site.plainwhite.analytics_id }}');
+    </script>
 	{%- endif -%}
 </head>
 <body>
